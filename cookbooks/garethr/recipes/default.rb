@@ -1,11 +1,11 @@
-%w{zsh wget curl lynx git-core ack-grep vim}.each do |pkg|
+%w{zsh wget curl lynx git-core ack-grep vim-nox}.each do |pkg|
   package pkg do
     action :install
   end
 end
 
 git "/home/vagrant/.oh-my-zsh" do
-  repository node[:garethr][:ohmyzsh] 
+  repository node[:garethr][:ohmyzsh]
   action :checkout
   user "vagrant"
   group "vagrant"
