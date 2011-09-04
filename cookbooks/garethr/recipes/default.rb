@@ -1,4 +1,4 @@
-%w{zsh wget curl lynx git-core ack-grep vim-nox}.each do |pkg|
+%w{binutils zsh wget curl lynx git-core ack-grep vim-nox}.each do |pkg|
   package pkg do
     action :install
   end
